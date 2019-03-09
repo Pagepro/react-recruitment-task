@@ -1,16 +1,16 @@
 [![pagepro_logo](https://raw.githubusercontent.com/Pagepro/frontend-recruitment-task-landing-page/master/logo.svg?sanitize=true)](https://pagepro.co/)
 
-# React developer recruitment task 
+# React Developer Recruitment Task 
 
 ## The task
 Your job is to code an app with posts of users with ability to manage posts and comments. Application must be SPA and use multiple routes (listed below). 
 
 ## Tech stack:
-API: [API DOCS](https://jsonplaceholder.typicode.com/)
-Starter: [Create react app starter](https://github.com/facebook/create-react-app)
-State Managment: [Redux](https://github.com/reduxjs/react-redux)
-Routing: [React-router](https://github.com/ReactTraining/react-router)
-Middleware: [redux-thunk](https://github.com/reduxjs/redux-thunk)
+* API: [API DOCS](https://jsonplaceholder.typicode.com/)
+* Starter: [Create react app starter](https://github.com/facebook/create-react-app)
+* State Managment: [Redux](https://github.com/reduxjs/react-redux)
+* Routing: [React-router](https://github.com/ReactTraining/react-router)
+* Middleware: [redux-thunk](https://github.com/reduxjs/redux-thunk)
 
 ## Screens:
 * `Homepage` 
@@ -52,7 +52,7 @@ Middleware: [redux-thunk](https://github.com/reduxjs/redux-thunk)
 2. Clean code (linters, prettier)
 3. UI kit for styles (or styled-components)
 4. Tests
-5. App deployed to [netlify](https://www.netlify.com/)
+5. App deployed to [Netlify](https://www.netlify.com/)
 
 ## What will we be paying attention to:
 1. How you split code for components
