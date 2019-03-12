@@ -14,7 +14,7 @@ Your job is to code an app with posts of users with ability to manage posts and 
 
 ## Screens:
 * `Homepage` 
-    ![Homepage](img/Homepage.png)
+    ![Homepage](img/HomePage.png)
     * List of users. 
     * For each user you must display his details (you can omit the address). 
     * On user click you will redirect to `User Details` page
@@ -41,9 +41,9 @@ Your job is to code an app with posts of users with ability to manage posts and 
     ![Add Comment Modal](img/AddCommentModal.png)
     *   Title
     *   Form fields
-    *   Two buttons `Cancel`, `Add`
+    *   Two buttons `Cancel`, `Save`
     *   Cancel will just close the modal and ignore changes
-    *   Add will connect with API and add Comment/Post to the list
+    *   Save will connect with API and add Comment/Post to the list
 
 ## Must-have:
 1. React &amp; Redux
