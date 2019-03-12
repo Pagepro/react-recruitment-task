@@ -14,16 +14,20 @@ Middleware: [redux-thunk](https://github.com/reduxjs/redux-thunk)
 
 ## Screens:
 * `Homepage` 
+    [Homepage](img/Homepage.png)
     * List of users. 
     * For each user you must display his details (you can omit the address). 
     * On user click you will redirect to `User Details` page
 * `User Details`
+    [User Details](img/UserDetails.png)
     * This page contains the user name at the top of the page.
     * List of user posts (just titles trimmed to one line).
     * On click on the post item you will redirect to `Post Details` page
     * Button that on click will open the  `Add post modal`. 
     * Back button that will go back to `Homepage`
 * `Post Details`
+    [User Details](img/PostDetails.png)
+    [User Details comments](img/PostDetailsComments.png)
     * On top of the page you still have the username
     * Post full details 
     * Button to remove post. 
@@ -33,6 +37,8 @@ Middleware: [redux-thunk](https://github.com/reduxjs/redux-thunk)
     * Adding comments should be similar to `Add Post Modal` but contain different fields and action.
     * Back button that will go back to `Posts list
 *  `Add Post/Comment Modal`
+    [Add Post Modal](img/AddPostModal.png)
+    [Add Comment Modal](img/AddCommentModal.png)
     *   Title
     *   Form fields
     *   Two buttons `Cancel`, `Add`
