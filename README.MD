@@ -17,56 +17,65 @@ Application should be created with Expo and got multiple screens (listed below).
 ## Screens:
 
 - `Sign In`
-  ![Sign In](img/SignIn.png)
   - Form with 2 fields (email, password)
-  - After fill form user should post it on /users endpoint (email, password)
+  - After fill form, user should post it on /users endpoint (email, password)
   - If response is ok, should get response and save it to secure store - next time user have not fill form again - can login by biometric or code with stored data
-    ![Sign In Biometric](img/SignInBiometric.png)
-  - Sign in screen by biometric tools
-- `Homepage`
-  ![Homepage](img/HomePage.png)
+- `Sign In - Biometric`
+  - Sign in by biometric tools
+    ![Sign In Screens](img/SignInScreens.png)
+- `Home Screen`
   - There are 2 tabs - users and posts
-  - There is a hamburger icon on top bar which can open a drawer.
-  - Drawer should contain logged user name and button to logout.
-- `Homepage - Users List Tab`
-  ![Users List Tab](img/UserList.png)
+- `Home Screen - Users List Tab`
   - List of users.
   - For each user you must display his user name.
   - On user click you will redirect to `User Details` page
-- `User Details`
-  ![User Details](img/UserDetails.png)
+- `Home Screen - Posts List Tab`
+  - List of posts.
+  - For each posts you must display titles (just titles trimmed to one line).
+  - On user click you will redirect to `Post Details` screen.
+- `Home Screen - Drawer`
+  - There is a hamburger icon on top bar which can open a drawer.
+  - Drawer should contain logged user name, toggle to change theme and logout button.
+  - toggle change colors light/dark (change styled component theme)
+  - After logout should clear secure store - back to the standard sign in screen
+    ![Home Screens](img/HomeScreens.png)
+- `User Screen`
   - This page contains the user name at top navigation bar.
   - List of user posts (just titles trimmed to one line).
-  - On click on the post item you will redirect to `Post Details` page
-  - Action Button that on click will open the `Add post modal`.
-  - Close cross button will go back to `Homepage - User List Tab`
+  - On click on the post item you will redirect to `Post Details` screen.
+  - Action Button that on click will open the `Add post modal screen`.
+  - Back button will go back to `Homepage - User List Tab`
+- `Add Post Modal`
+  - Form fields: Title, Content
+  - Validation - title required field, title more than 3 characters
+  - Two buttons `Save`, `Cancel`
+  - Cancel will just close the modal and ignore changes
+  - Save will connect with API and add Post to the list
+    ![Post Screens](img/UserScreens.png)
 - `Post Details`
-  ![Post Details](img/PostDetails.png)
-  ![Post Details comments](img/PostDetailsComments.png)
-  - On top you still have the username
+  - On top you still have the post title
   - Post full details
   - Button to remove post.
-  - On remove you will have to go back to `User Details` page and remove current post from the list and API.
+  - On remove you will have to go back to `User Details` or `Posts List` (depends where you were before) screen and remove current post from the list and API.
   - Button/link for comments 'show/hide comments' that will toggle the comments list visibility.
   - Button to add comment.
-  - Adding comments should be similar to `Add Post Modal` but contain different fields and action.
-  - Back button that will go back to `Posts list
-- `Add Post/Comment Modal`
-  ![Add Post Modal](img/AddPostModal.png)
-  ![Add Comment Modal](img/AddCommentModal.png)
-  - Title
-  - Form fields
-  - Two buttons `Cancel`, `Save`
+  - Adding comments should be modal screen similar to `Add Post Modal` screen but contain different fields and action.
+  - Close button that will go back to `Post Details` screen
+- `Add Comment Modal`
+  - Form fields: Title, Email, Content
+  - Validation - All fields required, title more than 3 characters, email - email validation
+  - Two buttons `Save`, `Cancel`
   - Cancel will just close the modal and ignore changes
-  - Save will connect with API and add Comment/Post to the list
+  - Save will connect with API and add Comment to the list
+    ![Add Post Modal](img/PostScreens.png)
 
 ## Must-have:
 
-1. React + Typescript
-2. Connection with API (GQL)
-3. Usage of react-router for multiple pages
-4. Loaders when you wait for the data (react-skeleton)
-5. Validation on forms
+1. React Native + Typescript
+2. Connection with API - REST (can use reqct-query)
+3. Usage of react-navigation for multiple screens
+4. Loaders when you wait for the data (can be standard from React Native)
+5. Static validation on forms
 6. Usage of modern js functionality (ES6+)
 
 ## Good to have:
@@ -74,7 +83,6 @@ Application should be created with Expo and got multiple screens (listed below).
 1. Clean code (linters, prettier)
 2. UI kit for styles (or styled-components)
 3. Tests
-4. App deployed to [Netlify](https://www.netlify.com/)
 
 ## What will we be paying attention to:
 
